@@ -24,3 +24,11 @@ let podeAplicar = maiorDeIdade && possuiCarteiraDeTrabalho;
 
 //Se o valor de podeAplicar for true, é emitido um alerta com o nome e a mensagem que o candidato se aplica à vaga, caso contrário emite-se outro alerta com seu nome, dizendo que ele não se aplica 
 let resultado = podeAplicar === true ? alert('O candidato ' + pessoa.nome + ' se aplica à vaga.') : alert('O candidato '+ pessoa.nome + ' não se aplica à vaga.') ;
+
+if(carteiraVerifica === false){
+  alert('Não possui Carteira de Trabalho');
+}
+
+if(idadeVerifica === false){
+  alert('Não possui idade suficiente');
+}
