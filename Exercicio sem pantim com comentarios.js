@@ -27,8 +27,8 @@ let resultado = podeAplicar === true ? alert('O candidato ' + pessoa.nome + ' se
 
 if(carteiraVerifica === false){
   alert('Não possui Carteira de Trabalho');
-}
+} //Se o resultado da verificação da carteira retornar um valor false (não possui carteira de trabalho) exibe na tela o motivo 
 
 if(idadeVerifica === false){
   alert('Não possui idade suficiente');
-}
+} // Se o resultado da verificação da idade retornar false (não é de maior) exibe na tela o motivo
