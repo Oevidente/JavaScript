@@ -1,0 +1,33 @@
+{
+    "terminal.integrated.profiles.windows": {
+
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "JavaScript Debug Terminal": {
+            "extensionIdentifier": "ms-vscode.js-debug",
+            "icon": "debug",
+            "id": "extension.js-debug.debugTerminal",
+            "title": "JavaScript Debug Terminal"
+        },
+        "GitBash": {
+            "source": "Git Bash",
+            "path": ["K:\\Program Files\\Git\\git-bash.exe"],
+            "icon": "terminal-bash"
+          }
+        
+    },
+    "terminal.integrated.defaultProfile.windows": "GitBash",
+    "git.terminalAuthentication": false,
+    "terminal.external.windowsExec": "GitBash"
+    
+}
