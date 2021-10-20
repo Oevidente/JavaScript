@@ -1,73 +1,73 @@
 # Tipos de Strings
 
-### Tipo primitivo
+- ### Tipo primitivo
 
-** <p style="color:red">**const**</p> **Mensagem = 'Minha primeira mensagem';**
+    <b>const Mensagem = 'Minha primeira mensagem'</b>
 
-**console.log(Mensagem);**
+  <b>console.log(Mensagem);</b>
 
-### Tipo objeto
+- ### Tipo objeto
 
-**const outraMensagem = new String('Bom Dia');**
+  <b>const outraMensagem = new String('Bom Dia');</b>
 
-**console.log(outraMensagem);**
-
-
-
-### typeof - exibe o tipo do valor
-
-**console.log(typeof Mensagem);**
+  <b>console.log(outraMensagem);</b>
 
 
 
-### lenght - exibe o tamanho da string
+- ### typeof - exibe o tipo do valor
 
-console.log(Mensagem.length);
-
-
-
-### [2] - exibe o terceiro item da string
-
-**console.log(Mensagem[2]);**
+  <b>console.log(typeof Mensagem);</b>
 
 
 
-### includes - Verifica se a string tem a palavra fornecida
+- ### lenght - exibe o tamanho da string
 
-**console.log(Mensagem.includes('primeira'));**
-
-
-
-### startsWith - Verifica se a string inicia com a palavra fornecida
-
-**console.log(Mensagem.startsWith('Minha'));**
+  <b>console.log(Mensagem.length);</b>
 
 
 
-### endsWith - Verifica se a string termina com a palavra fornecida
+- ### [2] - exibe o terceiro item da string
 
-**console.log(Mensagem.endsWith('mensagem'));**
-
-
-
-### indexOf - Verifica onde aquela palavra inicia
-
-**console.log(Mensagem.indexOf('Minha'));**
+  <b>console.log(Mensagem[2]);</b>
 
 
 
-### Replace - substitui uma palavra por outra declarada
+- ### includes - Verifica se a string tem a palavra fornecida
 
-**console.log(Mensagem.replace('Minha','Sua'));**
-
-
-
-### Trim - tira os espaços excedentes
-
-**console.log(Mensagem.trim());**
+  <b>console.log(Mensagem.includes('primeira'));</b>
 
 
 
-### split - corta o texto sempre que encontra o valor definifo
+- ### startsWith - Verifica se a string inicia com a palavra fornecida
 
-**console.log(Mensagem.split(' '));**
+  <b>console.log(Mensagem.startsWith('Minha'));</b>
+
+
+
+- ### endsWith - Verifica se a string termina com a palavra fornecida
+
+  <b>console.log(Mensagem.endsWith('mensagem'));</b>
+
+
+
+- ### indexOf - Verifica onde aquela palavra inicia
+
+  <b>console.log(Mensagem.indexOf('Minha'));</b>
+
+
+
+- ### Replace - substitui uma palavra por outra declarada
+
+  <b>console.log(Mensagem.replace('Minha','Sua'));</b>
+
+
+
+- ### Trim - tira os espaços excedentes
+
+  <b>console.log(Mensagem.trim());</b>
+
+
+
+- ### split - corta o texto sempre que encontra o valor definifo
+
+  <b>console.log(Mensagem.split(' '));</b></body></html>
