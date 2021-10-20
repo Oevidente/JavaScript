@@ -70,4 +70,4 @@
 
 - ### split - corta o texto sempre que encontra o valor definifo
 
-  <b>console.log(Mensagem.split(' '));</b></body></html>
+  <b>console.log(Mensagem.split(' '));</b>
