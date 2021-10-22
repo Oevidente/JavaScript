@@ -1,7 +1,13 @@
 //Resolução
 
 function calculadora() {
-    const operacao = Number(prompt('Escolha uma operação:\n 1 - Soma (+)\n 2 - Subtração (-)\n 3 - Multiplicação (*)\n 4 - Divisão real (/)\n 5 - Divisão inteira (%)\n 6 - Potenciação (**)'))
+    const operacao = Number(prompt(`Escolha uma operação:
+1 - Soma (+)
+2 - Subtração (-)
+3 - Multiplicação (*)
+4 - Divisão real (/)
+5 - Divisão inteira (%)
+6 - Potenciação (**)`));
 
     if (!operacao || operacao >= 7) {
         alert('Erro - Operação inválida!');
