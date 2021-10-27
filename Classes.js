@@ -19,4 +19,9 @@ andre.sobrenome = infos[1];
 andre.email = infos[2];
 andre.telefone = infos[3];
 
-console.log(andre);
+const lucas = new aluno();
+lucas.nome = infos[5];
+lucas.sobrenome = infos[6];
+lucas.idade = infos[8];
+lucas.turma = infos[7];
+console.log(andre, lucas);
