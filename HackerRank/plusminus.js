@@ -12,7 +12,7 @@ function plusMinus(arr) {
     let quantZeros = 0;
     let tamanhoArray = arr.length
 
-//percorrer os elementos do array e comparar para saber se são positivos, negativos ou se são zeros
+    //percorrer os elementos do array e comparar para saber se são positivos, negativos ou se são zeros
     arr.forEach(function (item) {
         if (item > 0) {
             quantNumPositivo++
