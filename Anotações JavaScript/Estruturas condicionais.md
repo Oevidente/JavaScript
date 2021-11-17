@@ -31,9 +31,78 @@ else {
 }
 ```
 
+## Tipos de condições
+
+### Condições simples ⇒
+
+Contém **apenas  if** sem *else*, caso a condição seja satisfeita ela executa um bloco de código.
+Caso contrário não faz nada.
+
+### Condições compostas ⇒
+
+Condições **compostas** que contém outras condições dentro delas. 
+Contem **if** e **else**, caso a condição não seja satisfeita executa outro bloco de código.
+
+### Condições aninhadas ⇒
+
+```jsx
+let idade = 18;
+
+console.log(`Você tem ${idade} anos.`)
+
+if (idade < 16) {
+    console.log('Não vota');
+} else {
+    if (idade < 18) {
+        console.log('Voto opcional');
+    } else {
+		    console.log('Voto obrigatório!');
+    }
+}
+```
+
+### Com else if ⇒
+
+```jsx
+let idade = 65;
+
+console.log(`Você tem ${idade} anos.`)
+
+if (idade < 16) {
+    console.log('Não vota');
+} else if (idade < 18) {
+    console.log('Voto opcional');
+} else {
+    if (idade >= 65 ) {
+        console.log('Voto opcional!');
+    } else {
+        console.log('Voto obrigatório!');
+    }
+}
+```
+
+### Com operador OU ⇒
+
+```jsx
+**//Também pode ser com o operador ou ||
+
+let idade = 160;
+
+console.log(`Você tem ${idade} anos.`)
+
+if (idade < 16) {
+    console.log('Não vota');
+} else if (idade < 18 || idade >= 65) {
+    console.log('Voto opcional');
+} else {
+    console.log('Voto obrigatório!');
+}**
+```
+
 # Usando switch/case
 
 O "switch/case" funciona como uma estrutura condicional também.
+É conhecido como Condição múltipla.
 
 ```jsx
 switch (placar) {
