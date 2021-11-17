@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar de velocidade</title>
+    <style>
+        body {
+            font: normal 18px Arial;
+            background: rgb(0, 149, 255)
+        }
+
+        input {
+            border-radius: 15pt;
+            max-width: 80pt;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #msg {
+            margin-top: 10pt;
+            font-size: 18pt;
+        }
+
+        #res {
+            margin-top: 10pt;
+            font-size: 18pt;
+            color: red;
+            background: rgba(0, 0, 0, 0.376);
+            border-radius: 15pt;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>RADAR DE VELOCIDADE</h1>
+    <input type="number" name="velocidade" id="velocidade">
+    <input type="button" value="Verificar" id="verificar" onclick="verificar()">
+    <div id="res"></div>
+    <div id="msg"></div>
+    <script>
+        function verificar() {
+            let velInput = document.getElementById('velocidade');
+            let res = document.getElementById('res');
+            let msg = document.getElementById('msg');
+            let velNum = Number(velInput.value)
+            
+            msg.innerHTML = `Sua velocidade é <strong>${velNum}km/h</strong>`
+            
+            if (velNum > 60) {
+                res.innerHTML = 'VOCÊ ULTRAPASSOU O LIMITE DE VELOCIDADE E FOI <strong>MULTADO</strong>'
+            }
+
+            msg.innerHTML += '<p>Dirija sempre com segurança!</p>'
+        }
+    </script>
+</body>
+
+</html>
