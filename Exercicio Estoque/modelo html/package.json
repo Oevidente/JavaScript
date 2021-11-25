@@ -1,0 +1,14 @@
+{
+    "name": "modelo-html",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "start": "node script.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "readline-sync": "^1.4.10"
+    }
+}

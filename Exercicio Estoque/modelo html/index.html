@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estoque</h1>
+    </header>
+    <section>
+        <div id="adcprod">
+            <p>
+                Deseja adicionar algum produto ao estoque?
+
+                <input type="radio" name="radAd" id="simAd" checked="checked">
+                <label for="simAd">Sim</label>
+                <input type="radio" name="radAd" id="naoAd">
+                <label for="naoAd">Não</label>
+                <input type="button" value="prosseguir" class="button" onclick="prosseguir()">
+            </p>
+        </div>
+        <div id="busca">
+            <p>
+                Deseja buscar algum produto por categoria?
+
+                <input type="radio" name="radsel" id="simbusca" checked="checked">
+                <label for="simbusca">Sim</label>
+                <input type="radio" name="radsel" id="naobusca">
+                <label for="naobusca">Não</label>
+                <input type="button" value="buscar" class="button">
+            </p>
+        </div>
+        <div id="desconto">
+            <p>
+                Deseja aplicar algum desconto?
+
+                <input type="radio" name="raddes" id="simdes" checked="checked">
+                <label for="simdes">Sim</label>
+                <input type="radio" name="raddes" id="naodes">
+                <label for="naodes">Não</label>
+                <input type="button" value="prosseguir" class="button">
+            </p>
+        </div>
+        <div id="resbusca">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <table id="tabelaestoque">
+                <thead>
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Teste 1</td>
+                        <td>Teste 2</td>
+                        <td>Teste 3</td>
+                    </tr>
+                    <tr>
+                        <td>Teste 4</td>
+                        <td>Teste 5</td>
+                        <td>Teste 6</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div id="resdes">
+            <table id="tabeladesconto">
+                <thead>
+                    <tr>
+                        <th id="th">Coluna 1</th>
+                        <th id="th">Coluna 2</th>
+                        <th id="th">Coluna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Teste 1</td>
+                        <td>Teste 2</td>
+                        <td>Teste 3</td>
+                    </tr>
+                    <tr>
+                        <td>Teste 4</td>
+                        <td>Teste 5</td>
+                        <td>Teste 6</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Oevidente</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
