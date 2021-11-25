@@ -1,0 +1,50 @@
+body {
+    background: rgb(0, 110, 255);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.491);
+}
+
+input {
+    background: white;
+    text-align: center;
+    margin-top: 10pt;
+    max-width: auto;
+    height: 20px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+select#flista {
+    width: 150px;
+    background: white;
+    text-align: center;
+    margin-top: 10pt;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
