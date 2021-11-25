@@ -1,0 +1,46 @@
+body {
+    margin-top: 20%;
+    background: #36D1DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.491)
+}
+
+section {
+    background: rgb(186, 214, 250);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.491);
+}
+
+input {
+    text-align: center;
+    margin-top: 10pt;
+    max-width: 60pt;
+    height: 20px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+#res {
+    margin-top: 10pt;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.491)
+}

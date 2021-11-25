@@ -1,0 +1,57 @@
+body {
+    margin-top: 20%;
+    background: #36D1DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.491)
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.491);
+}
+
+input {
+    background: rgb(215, 236, 247);
+    text-align: center;
+    margin-top: 10pt;
+    max-width: auto;
+    height: 20px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+select {
+    font-style: bold;
+    background: rgb(215, 236, 247);
+    text-align: center;
+    margin-top: 10pt;
+    max-width: auto;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.491)
+}
