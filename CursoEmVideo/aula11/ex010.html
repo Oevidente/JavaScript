@@ -11,19 +11,19 @@
             font: normal 18px Arial;
             background: rgb(0, 149, 255)
         }
-
+        
         input {
             border-radius: 15pt;
             max-width: 80pt;
             text-align: center;
             vertical-align: middle;
         }
-
+        
         #msg {
             margin-top: 10pt;
             font-size: 18pt;
         }
-
+        
         #res {
             margin-top: 10pt;
             font-size: 18pt;
@@ -47,9 +47,9 @@
             let res = document.getElementById('res');
             let msg = document.getElementById('msg');
             let velNum = Number(velInput.value)
-            
+
             msg.innerHTML = `Sua velocidade é <strong>${velNum}km/h</strong>`
-            
+
             if (velNum > 60) {
                 res.innerHTML = 'VOCÊ ULTRAPASSOU O LIMITE DE VELOCIDADE E FOI <strong>MULTADO</strong>'
             }
