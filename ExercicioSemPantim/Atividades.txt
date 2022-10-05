@@ -1,0 +1,36 @@
+Boa noite, Proanos!
+
+Segue aqui a lista com exercícios propostos adicionais de JavaScript.
+
+
+Questão 1
+
+Crie um código que imprima a contagem de 0 até um número colocado pelo usuário, imprimindo apenas números ímpares.
+
+Questão 2
+
+Crie um código que imprima para o usuário a tabuada de certo número. Preferencialmente trabalhe com uma caixa de input e um botão na sua página.
+
+Questão 3
+
+Crie um código que peça o mês e o dia do aniversário do usuário, e em seguida diga qual o signo do usuário.
+    Áries: 21 de março a 20 de abril
+    Touro: 21 de abril a 20 de maio
+    Gêmeos: 21 de maio a 20 de junho
+    Câncer: 21 de junho a 22 de julho
+    Leão: 23 de julho a 22 de agosto
+    Virgem: 23 de agosto a 22 de setembro
+    Libra: 23 de setembro a 22 de outubro
+    Escorpião: 23 de outubro a 21 de novembro
+    Sagitário: 22 de novembro a 21 de dezembro
+    Capricórnio: 22 de dezembro a 20 de janeiro
+    Aquário: 21 de janeiro a 19 de fevereiro
+    Peixes: 19 de fevereiro a 20 de março
+    
+Questão 4
+
+Trabalhe novamente com o seu exercício do caixa de mercado (proposto na aula 12 de JavaScript) e adicione ao menu a opção de cadastrar um produto.
+
+Questão 5
+
+Crie um código que insira o residentes de um domicílio, colocando dados básicos de cada um (nome, idade, peso, altura, renda). E adicione funções que calculem os seguintes dados: renda média por residente, IMC médio na residência e idade média dos residentes.
