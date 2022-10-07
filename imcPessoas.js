@@ -1,10 +1,10 @@
 //Classe pessoa que serve como molde para a criação dos objetos "residente" no array listaResidentes
 let contador = 0;
-let mediaR = 0;
-let mediaIMC = 0;
-let mediaIdade = 0;
+let totalR = 0;
+let totalIMC = 0;
+let totalIdade = 0;
 
-class pessoa {
+class Pessoa {
   nome = prompt('Digite o nome:');
   idade = parseInt(prompt('Digite a idade:'));
   peso = parseFloat(prompt('Digite o peso:'));
@@ -15,7 +15,7 @@ let listaResidentes = []; //Lista que contém os residentes e seus dados
 
 //função que cadastra os residentes e os adiciona à lista
 function cadastrar() {
-  listaResidentes.push(new pessoa());
+  listaResidentes.push(new Pessoa());
   adicionar();
 }
 
@@ -23,9 +23,9 @@ function cadastrar() {
 function adicionar(resposta) {
   ++contador; //incrementa antes de verificar o valor, ou seja, antes de ler o valor o programa adiciona 1.
   if (contador > 1) {
-    resposta = prompt('Deseja cadastrar mais um residente?');
+    resposta = prompt('Deseja cadastrar mais um residente?').toLowerCase(); //recebe a resposta e transforma em caixa baixa
   } else {
-    resposta = prompt('Deseja cadastrar um residente?');
+    resposta = prompt('Deseja cadastrar um residente?').toLowerCase();
     if (resposta == 'sim') {
       cadastrar();
     } else {
@@ -40,11 +40,11 @@ adicionar();
 function rendaMedia() {
   listaResidentes.forEach(function (residente) {
     let renda = residente.renda;
-    mediaR += renda;
+    totalR += renda;
   });
 
   alert(
-    `A média de renda na residência é: R$${mediaR / listaResidentes.length}`,
+    `A média de renda na residência é: R$${totalR / listaResidentes.length}`,
   );
 }
 function imcMedio() {
@@ -52,24 +52,24 @@ function imcMedio() {
     let peso = residente.peso;
     let altura = residente.altura;
     let imc = peso / altura ** 2;
-    mediaIMC += imc;
+    totalIMC += imc;
   });
 
   alert(
     `A média do IMC na residência é:${(
-      mediaIMC / listaResidentes.length
+      totalIMC / listaResidentes.length
     ).toFixed()}`,
   );
 }
 function idadeMedia() {
   listaResidentes.forEach(function (residente) {
     let idade = residente.idade;
-    mediaIdade += idade;
+    totalIdade += idade;
   });
 
   alert(
     `A média de idade na residência é: ${(
-      mediaIdade / listaResidentes.length
+      totalIdade / listaResidentes.length
     ).toFixed()}`,
   );
 }
