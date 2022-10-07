@@ -1,6 +1,6 @@
 //Classe pessoa que serve como molde para a criação dos objetos "residente" no array listaResidentes
 let contador = 0;
-let totalR = 0;
+let totalRenda = 0;
 let totalIMC = 0;
 let totalIdade = 0;
 
@@ -40,11 +40,13 @@ adicionar();
 function rendaMedia() {
   listaResidentes.forEach(function (residente) {
     let renda = residente.renda;
-    totalR += renda;
+    totalRenda += renda;
   });
 
   alert(
-    `A média de renda na residência é: R$${totalR / listaResidentes.length}`,
+    `A média de renda na residência é: R$${
+      totalRenda / listaResidentes.length
+    }`,
   );
 }
 function imcMedio() {
