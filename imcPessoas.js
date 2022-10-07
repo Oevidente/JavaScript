@@ -21,7 +21,7 @@ function cadastrar() {
 
 //Pergunta ao usuário se ele deseja adicionar um novo residente
 function adicionar(resposta) {
-  ++contador;
+  ++contador; //incrementa antes de verificar o valor, ou seja, antes de ler o valor o programa adiciona 1.
   if (contador > 1) {
     resposta = prompt('Deseja cadastrar mais um residente?');
   } else {
