@@ -1,4 +1,8 @@
 //Classe pessoa que serve como molde para a criação dos objetos "residente" no array listaResidentes
+let contador = 0;
+let mediaR = 0;
+let mediaIMC = 0;
+let mediaIdade = 0;
 
 class pessoa {
   nome = prompt('Digite o nome:');
@@ -11,24 +15,28 @@ let listaResidentes = []; //Lista que contém os residentes e seus dados
 
 //função que cadastra os residentes e os adiciona à lista
 function cadastrar() {
-  listaResidentes.push((residente = new pessoa()));
+  listaResidentes.push(new pessoa());
   adicionar();
 }
 
 //Pergunta ao usuário se ele deseja adicionar um novo residente
 function adicionar(resposta) {
-  resposta = prompt('Deseja cadastrar um residente?');
-  if (resposta == 'sim') {
-    cadastrar();
+  ++contador;
+  if (contador > 1) {
+    resposta = prompt('Deseja cadastrar mais um residente?');
   } else {
-    alert('Até mais!');
+    resposta = prompt('Deseja cadastrar um residente?');
+    if (resposta == 'sim') {
+      cadastrar();
+    } else {
+      alert('Até mais!');
+    }
   }
 }
 adicionar();
 
 //E adicione funções que calculem os seguintes dados: renda média por residente, IMC médio na residência e idade média dos residentes.
 
-let mediaR = 0;
 function rendaMedia() {
   listaResidentes.forEach(function (residente) {
     let renda = residente.renda;
@@ -39,12 +47,11 @@ function rendaMedia() {
     `A média de renda na residência é: R$${mediaR / listaResidentes.length}`,
   );
 }
-let mediaIMC = 0;
 function imcMedio() {
   listaResidentes.forEach(function (residente) {
     let peso = residente.peso;
     let altura = residente.altura;
-    imc = peso / altura ** 2;
+    let imc = peso / altura ** 2;
     mediaIMC += imc;
   });
 
@@ -54,7 +61,6 @@ function imcMedio() {
     ).toFixed()}`,
   );
 }
-let mediaIdade = 0;
 function idadeMedia() {
   listaResidentes.forEach(function (residente) {
     let idade = residente.idade;
