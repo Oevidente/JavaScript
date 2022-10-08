@@ -26,16 +26,20 @@ function adicionar(resposta) {
     resposta = prompt('Deseja cadastrar mais um residente?').toLowerCase(); //recebe a resposta e transforma em caixa baixa
   } else {
     resposta = prompt('Deseja cadastrar um residente?').toLowerCase();
-    if (resposta == 'sim') {
+  }
+  if (resposta === 'sim') {
       cadastrar();
     } else {
+      rendaMedia();
+imcMedio();
+idadeMedia();
+
       alert('Até mais!');
     }
-  }
 }
 adicionar();
 
-//E adicione funções que calculem os seguintes dados: renda média por residente, IMC médio na residência e idade média dos residentes.
+//E adicione funções que calculem os seguintes dados: renda média por residente, IMC médio na residência e idade média dos residentes.
 
 function rendaMedia() {
   listaResidentes.forEach(function (residente) {
@@ -75,6 +79,3 @@ function idadeMedia() {
     ).toFixed()}`,
   );
 }
-rendaMedia();
-imcMedio();
-idadeMedia();
