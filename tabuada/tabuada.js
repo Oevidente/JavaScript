@@ -1,8 +1,12 @@
 /*Crie um código que imprima para o usuário a tabuada de certo número. 
 Preferencialmente trabalhe com uma caixa de input e um botão na sua página. */
 let num = 0;
-let input = document.querySelector('#numero'); num = parseInt(input.value);
-console.log(num);
+function addValor() {
+  let input = document.getElementById('numero');
+
+  num = parseInt(input.value);
+}
+
 function tabuada() {
   console.log(`
   ${num * 1}
