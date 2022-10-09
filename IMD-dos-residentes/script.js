@@ -1,11 +1,12 @@
 //Classe pessoa que serve como molde para a criação dos objetos "residente" no array listaResidentes
-
+let imc = 0;
 let totalRenda = 0;
 let mediaRenda = 0;
 let totalIMC = 0;
 let mediaIMC = 0;
 let totalIdade = 0;
 let mediaIdade = 0;
+
 const section = document.querySelector('.section');
 const article = document.querySelector('article');
 class Pessoa {
@@ -67,17 +68,33 @@ function imcMedio() {
   listaResidentes.forEach(function (residente) {
     let peso = residente.peso;
     let altura = residente.altura;
-    let imc = peso / altura ** 2;
+    imc = peso / altura ** 2;
     totalIMC += imc;
     console.log(totalIMC);
   });
+  function stringIMC() {
+    if (imc >= 18.5 && imc <= 24.9) {
+      return 'Peso Normal';
+    } else if (imc >= 25 && imc <= 29.9) {
+      return 'Sobrepeso';
+    } else if (imc >= 30 && imc <= 34.9) {
+      return 'Obeso I';
+    } else if (imc >= 35 && imc <= 40) {
+      return 'Obeso II';
+    } else if (imc > 40) {
+      return 'Obesidade III';
+    } else {
+      return 'Magreza';
+    }
+  }
   if (section.innerHTML.includes(`<h5>Renda Média</h5>`) == true) {
     section.innerHTML += `<div>  <h5>IMC Médio</h5>
     <p>A média do IMC na residência é: <strong>${(
       totalIMC / listaResidentes.length
-    ).toFixed()}</strong> </p> </div>`;
+    ).toFixed()} ${stringIMC()}</strong> </p> </div>`;
   }
 }
+
 function idadeMedia() {
   listaResidentes.forEach(function (residente) {
     let idade = residente.idade;
