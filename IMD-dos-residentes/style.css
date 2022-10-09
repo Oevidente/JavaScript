@@ -36,6 +36,7 @@ h1{
   color: var(--cor-primaria);
   text-shadow: 1px 1px 2px var(--cor-terciaria);
 }
+
 div{
   margin: 10px 0;
 }
@@ -47,7 +48,7 @@ color: var(--cor-querternaria);
 font-size: large;
 font-weight: bolder;
 width: 20vw;
-max-width: 250px;
+max-width: 150px;
 background-color: var(--cor-primaria);
 border: solid 3px var(--cor-querternaria);
 border-radius: 10px;
@@ -57,7 +58,7 @@ border-radius: 10px;
   font-size: large;
   font-weight: bolder;
   width: 20vw;
-  max-width: 250px;
+  max-width: 150px;
   background-color: var(--cor-primaria);
   border: solid 3px var(--cor-querternaria);
   border-radius: 10px;

@@ -7,7 +7,7 @@ let mediaIMC = 0;
 let totalIdade = 0;
 let mediaIdade = 0;
 const section = document.querySelector('.section');
-
+const article = document.querySelector('article');
 class Pessoa {
   nome = document.querySelector('#nomeIn').value;
   idade = parseInt(document.querySelector('#idadeIn').value);
@@ -24,11 +24,27 @@ function cadastrar() {
   listaResidentes.push(new Pessoa());
   alert(`Residente adicionado com sucesso!`);
   console.log(listaResidentes);
+  article.innerHTML = `<p>Residentes: ${listaResidentes.length}</p>`;
+  limpaCampos();
+}
+function limpaCampos() {
+  document.querySelector('#nomeIn').value = '';
+  document.querySelector('#idadeIn').value = '';
+  document.querySelector('#pesoIn').value = '';
+  document.querySelector('#alturaIn').value = '';
+  document.querySelector('#rendaIn').value = '';
 }
 function calcular() {
   rendaMedia();
   imcMedio();
   idadeMedia();
+  //zera as variáveis para evitar que se somem os valores toda vez que calcular
+  totalRenda = 0;
+  mediaRenda = 0;
+  totalIMC = 0;
+  mediaIMC = 0;
+  totalIdade = 0;
+  mediaIdade = 0;
 }
 //Pergunta ao usuário se ele deseja adicionar um novo residente
 
