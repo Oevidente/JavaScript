@@ -1,4 +1,3 @@
-//Classe pessoa que serve como molde para a criação dos objetos "residente" no array listaResidentes
 let imc = 0;
 let totalRenda = 0;
 let mediaRenda = 0;
@@ -7,6 +6,7 @@ let mediaIMC = 0;
 let totalIdade = 0;
 let mediaIdade = 0;
 
+//Classe pessoa que serve como molde para a criação dos objetos "residente" no array listaResidentes
 const section = document.querySelector('.section');
 const article = document.querySelector('article');
 class Pessoa {
@@ -16,10 +16,12 @@ class Pessoa {
   altura = parseFloat(document.querySelector('#alturaIn').value);
   renda = parseFloat(document.querySelector('#rendaIn').value);
 }
+
 const listaResidentes = []; //Lista que contém os residentes e seus dados
 if (section.innerText === '') {
   document.querySelector('.section').classList.add('invisivel');
 }
+
 //função que cadastra os residentes e os adiciona à lista
 function cadastrar() {
   listaResidentes.push(new Pessoa());
@@ -28,6 +30,8 @@ function cadastrar() {
   article.innerHTML = `<p>Residentes: ${listaResidentes.length}</p>`;
   limpaCampos();
 }
+
+//Sempre que acionada limpa os inputs
 function limpaCampos() {
   document.querySelector('#nomeIn').value = '';
   document.querySelector('#idadeIn').value = '';
@@ -35,6 +39,8 @@ function limpaCampos() {
   document.querySelector('#alturaIn').value = '';
   document.querySelector('#rendaIn').value = '';
 }
+
+//E adicione funções que calculem os seguintes dados: renda média por residente, IMC médio na residência e idade média dos residentes.
 function calcular() {
   rendaMedia();
   imcMedio();
@@ -47,8 +53,6 @@ function calcular() {
   totalIdade = 0;
   mediaIdade = 0;
 }
-
-//E adicione funções que calculem os seguintes dados: renda média por residente, IMC médio na residência e idade média dos residentes.
 
 function rendaMedia() {
   listaResidentes.forEach(function (residente) {
