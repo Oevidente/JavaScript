@@ -47,7 +47,6 @@ function calcular() {
   totalIdade = 0;
   mediaIdade = 0;
 }
-//Pergunta ao usuário se ele deseja adicionar um novo residente
 
 //E adicione funções que calculem os seguintes dados: renda média por residente, IMC médio na residência e idade média dos residentes.
 
