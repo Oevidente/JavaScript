@@ -1,0 +1,35 @@
+:root{
+  --dark1 :#2C2433;
+  --dark2 :#282433;
+  --eigengrau :#16161d;
+  --dark4: #242833;
+  --dark5: #242C33;
+}
+body.dark {
+  background-color: var(--eigengrau);
+}
+nav.dark {
+  background-color: var(--dark4);
+}
+nav.dark a {
+  color: whitesmoke;
+}
+nav.dark a:hover{
+  background-color: whitesmoke;
+  color: var(--dark2);box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.399);
+}
+body.dark h1{
+  color: whitesmoke;
+}
+body.dark p{
+  color: whitesmoke;
+}
+body.dark input {
+  background-color: var(--dark2);
+  color: whitesmoke;
+}
+body.dark input:hover {
+  background-color: whitesmoke;
+  color: var(--dark2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.399);
+}
