@@ -5,27 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Lista de compras</title>
 </head>
 
 <body>
   <h1>Compras</h1>
-  <label for="produto">Produto</label>
-  <input type="text" name="produto" class="input-produto" placeholder="Insira o nome do produto">
-  <label for="preco">Preço</label>
-  <input type="text" name="preco" class="input-preco" placeholder="Insira o preço">
-  <label for="quantidade">Quantidade</label>
-  <input type="text" name="quantidade" class="input-quantidade" placeholder="Insira a quantidade">
-  <input type="button" value="Adicionar" onclick="listaETotal()">
-  <!-- <div><input type="text" id="productNameField" placeholder="Produto a remover">
-    <button id="removerProduto" onclick="removerProduto()">Remover Produto</button>
-    <ul id="productList"></ul>
-  </div> -->
-  <ul class="listaProdutos"></ul>
-  <ul class="totalProdutos">
-    <li class="total"></li>
-  </ul>
-  <div><input type="button" value="Finalizar compra" onclick="totalCompras()"></div>
+  <div class="addProduto">
+    <div>
+      <label for="produto">Produto</label>
+      <input type="text" name="produto" class="input-produto" placeholder="Insira o nome do produto">
+    </div>
+    <div>
+      <label for="preco">Preço</label>
+      <input type="text" name="preco" class="input-preco" placeholder="Insira o preço">
+    </div>
+    <div>
+      <label for="quantidade">Quantidade</label>
+      <input type="text" name="quantidade" class="input-quantidade" placeholder="Insira a quantidade">
+    </div>
+    <div>
+      <input type="button" value="Adicionar" onclick="listaETotal()" class="inputBtn">
+    </div>
+  </div>
+  <div>
+    <ul class="listaProdutos"></ul>
+    <ul class="totalProdutos">
+      <li class="total"></li>
+    </ul>
+  </div>
+  <div>
+    <input type="button" value="Finalizar compra" onclick="totalCompras()" class="total-compras">
+  </div>
   <script src="script-dom.js"></script>
 </body>
 

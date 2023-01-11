@@ -66,9 +66,11 @@ const removerProduto = (event) => {
 };
 
 function totalCompras() {
-  totalCompra = carrinho.reduce((soma, prod) => {
-    return soma + prod.preco;
-  }, 0);
+  totalCompra = carrinho
+    .reduce((soma, prod) => {
+      return soma + prod.preco;
+    }, 0)
+    .toFixed(2);
 
   const li = document.querySelector('.total');
   // Adiciona o nome do elemento
@@ -76,3 +78,15 @@ function totalCompras() {
 
   console.log(totalCompra);
 }
+
+let input = document.querySelector('.input-quantidade');
+
+input.addEventListener('keypress', function (event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === 'Enter') {
+    // Cancel the default action, if needed
+    listaETotal();
+    // Trigger the button element with a click
+    document.getElementById('.input-quantidade').click();
+  }
+});
